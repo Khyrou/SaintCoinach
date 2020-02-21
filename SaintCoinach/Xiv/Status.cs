@@ -11,6 +11,8 @@ namespace SaintCoinach.Xiv {
         public bool CanDispel { get { return AsBoolean("CanDispel"); } }
         public byte Category { get { return As<byte>("Category"); } }
 
+        public int VFX { get { return As<int>("VFX"); } }
+
         #endregion
 
         #region Constructors

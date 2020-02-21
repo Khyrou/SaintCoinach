@@ -34,11 +34,7 @@
     },
     {
       "index": 7,
-      "name": "VFX",
-      "converter": {
-        "type": "link",
-        "target": "StatusLoopVFX"
-      }
+      "name": "VFX"
     },
     {
       "index": 8,
