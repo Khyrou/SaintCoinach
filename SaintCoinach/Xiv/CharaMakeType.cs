@@ -21,7 +21,7 @@ namespace SaintCoinach.Xiv {
             var items = new List<CharaMakeFeatureIcon>();
 
             for (var i = 0; i < Count; ++i) {
-                var item = AsImage("FacialFeatureIcon", i);
+                var item = AsImage("FacialFeatureOption", i);
                 if (item == null) continue;
                 items.Add(new CharaMakeFeatureIcon(item, i));
             }
