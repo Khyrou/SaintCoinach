@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 namespace SaintCoinach.Xiv {
     [Serializable]
     public struct Quad {
-        public short Value1;
-        public short Value2;
-        public short Value3;
-        public short Value4;
+        public ushort Value1;
+        public ushort Value2;
+        public ushort Value3;
+        public ushort Value4;
 
         public Quad(long data) {
-            Value1 = (short)data;
-            Value2 = (short)(data >> 16);
-            Value3 = (short)(data >> 32);
-            Value4 = (short)(data >> 48);
+            Value1 = (ushort)data;
+            Value2 = (ushort)(data >> 16);
+            Value3 = (ushort)(data >> 32);
+            Value4 = (ushort)(data >> 48);
         }
 
         public static Quad Read(byte[] buffer, int offset, bool bigEndian) {
